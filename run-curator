@@ -1,7 +1,11 @@
 #!/bin/sh
 
+echo "Waiting ${INITIAL_DELAY:=60} seconds..."
+sleep "${INITIAL_DELAY}"
+
 while true; do
   /usr/bin/curator --config /etc/curator/config.yml /etc/curator/actions.yml
 
-  sleep ${PERIOD:-86400}
+  echo "Sleeping ${PERIOD:=86400} until next run..."
+  sleep "${PERIOD}"
 done
