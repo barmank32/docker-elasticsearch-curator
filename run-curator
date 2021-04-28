@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Waiting ${INITIAL_DELAY:=60} seconds..."
+echo "Waiting ${INITIAL_DELAY:=60} seconds for initial run..."
 sleep "${INITIAL_DELAY}"
 
 while true; do

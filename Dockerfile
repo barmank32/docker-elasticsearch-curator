@@ -1,8 +1,8 @@
 FROM alpine
 
-RUN apk -U add python py2-pip
+RUN apk -U add python3 py3-pip
 
-ARG CURATOR_VERSION=5.8.1
+ARG CURATOR_VERSION=5.8.3
 
 RUN pip install elasticsearch-curator==${CURATOR_VERSION}
 
