@@ -10,7 +10,7 @@ actions:
     filters:
     - filtertype: pattern
       kind: regex
-      value: "^(logstash-|metricbeat-).*$"
+      value: "^(logstash-|metricbeat-|fluentd-).*$"
     - filtertype: age
       source: name
       direction: older
